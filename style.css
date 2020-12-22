@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    min-height: 100vh;
+}
+.piano{
+    display: flex;
+    
+}
+.key{
+    height: calc(var(--width)*4);
+    width: var(--width);
+}
+.white{
+    --width: 100px;
+    background-color: white;
+    margin: 3px;
+}
+.black{
+    --width: 60px;
+    margin-right: calc(60px / -2);
+    margin-left: calc(60px / -2);
+    background-color: black;
+    z-index: 2;
+    
+}
+.effect{
+    opacity: .8;
+}
